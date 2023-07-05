@@ -1,15 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>toDoApp</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="marco">
+        <h1>Tareas por hacer</h1>
+      </div>
+      <div class="nueva_tarea">
+        <input
+          type="text"
+          class="descripcion_tarea"
+          id="procesarEnter"
+          placeholder="Ingresar tarea"
+        />
+        <button class="agregar_tarea" id="agregarTarea">Agregar</button>
+      </div>
+      <div class="contador">
+        Tareas Completadas:
+        <p class="tareas_completadas">0</p>
+      </div>
+      <div class="lista_tareas">
+        <p class="sin_tareas" style="display: block">No hay tareas</p>
+      </div>
+     
+    </div>
+    <div>
+    </div>
 
-<head>
-	<title>Ejemplo básico</title>
-	<meta charset="UTF-8" />
-</head>
-
-<body>
-	<h1>La aplicación esta corriendo!</h1>
-
-	<script src="./index.js" type="module"></script>
-</body>
-
+    <script src="./JS/index.js" type="module"></script>
+  </body>
 </html>

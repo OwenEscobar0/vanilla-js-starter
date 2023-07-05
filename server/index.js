@@ -21,11 +21,12 @@ taskRouter
     return res.json(tasks);
   })
   .post(function (req, res) {
-    tasks.push({
+    const newTask = {
       ...req.body,
       id: uuid(),
-    });
-    return res.json(tasks);
+    };
+    tasks.push(newTask);
+    return res.json(newTask);
   });
 taskRouter.route("/:task_id")
   .get(function (req, res) {
